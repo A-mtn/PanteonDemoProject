@@ -34,7 +34,6 @@ public class enemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         ranking.rankingArray[1] = Vector3.Distance(gameObject.transform.position, destination.transform.position);
         
         if (gameObject.transform.position == destination.transform.position)
@@ -53,8 +52,6 @@ public class enemyAI : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        
-        
         Destroy(gameObject);
     }
 }
